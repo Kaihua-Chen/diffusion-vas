@@ -16,3 +16,17 @@ We benchmark our approach alongside a wide array of state-of-the-art methods on 
 ## Updates
 
 - We will release the code soon... 🤓
+
+## BibTeX
+
+```bibtex
+@article{chen2024diffvas,
+  title        = {Using Diffusion Priors for Video Amodal Segmentation},
+  author       = {Kaihua Chen and Deva Ramanan and Tarasha Khurana},
+  year         = {2024},
+  eprint       = {},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  url          = {},
+}
+```
