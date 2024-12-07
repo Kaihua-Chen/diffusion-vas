@@ -9,4 +9,4 @@ Kaihua Chen<sup>1</sup>, Deva Ramanan<sup>1</sup>, Tarasha Khurana<sup>1</sup> <
 
 ## Updates
 
-- We will release the code soon... 🤗🤗🤗
+- We will release the code soon... 🤓
