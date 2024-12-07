@@ -7,6 +7,10 @@ Kaihua Chen<sup>1</sup>, Deva Ramanan<sup>1</sup>, Tarasha Khurana<sup>1</sup> <
 <sup>1</sup>Carnegie Mellon University
 
 
+<p align="center">
+    <img src="assets/teaser.png">
+</p>
+
 ## Updates
 
 - We will release the code soon... 🤓
