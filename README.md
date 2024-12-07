@@ -17,7 +17,7 @@ We benchmark our approach alongside a wide array of state-of-the-art methods on 
 
 - We will release the code soon... 🤓
 
-## BibTeX
+## Citing us
 
 ```bibtex
 @article{chen2024diffvas,
