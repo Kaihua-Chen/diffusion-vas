@@ -1,6 +1,6 @@
 # Using Diffusion Priors for Video Amodal Segmentation
 
-[**Paper**](https://diffusion-vas.github.io) | [**Project Page**](https://diffusion-vas.github.io) | [**Video**](https://www.youtube.com/watch?v=nXO7laNyARA)
+[**Paper**](https://diffusion-vas.github.io) | [**Project Page**](https://diffusion-vas.github.io) | [**Video**](https://www.youtube.com/watch?v=ilHCPNaH7tY)
 
 Using Diffusion Priors for Video Amodal Segmentation <br>
 Kaihua Chen, Deva Ramanan, Tarasha Khurana <br>
