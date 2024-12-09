@@ -15,6 +15,7 @@ We benchmark our approach alongside a wide array of state-of-the-art methods on 
 
 ## Updates
 
+- Our paper has been released on arXiv!
 - We will release the code soon... 🤓
 
 ## Citing us
