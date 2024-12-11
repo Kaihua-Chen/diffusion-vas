@@ -15,8 +15,9 @@ We benchmark our approach alongside a wide array of state-of-the-art methods on 
 
 ## Updates
 
-- Our paper is now available on arXiv!
+- Our [**Paper**](https://arxiv.org/abs/2412.04623) is now available on arXiv!
 - Code release coming soon... stay tuned! 🤓
+- Check out our [**Project Page**](https://diffusion-vas.github.io) for more details!
 
 ## Citing us
 
