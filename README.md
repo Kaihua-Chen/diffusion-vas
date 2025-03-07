@@ -47,6 +47,7 @@ git clone https://huggingface.co/kaihuac/diffusion-vas-amodal-segmentation
 git clone https://huggingface.co/kaihuac/diffusion-vas-content-completion
 cd ..
 ```
+*Note: Ignore any Windows-related warnings.*
 
 For **Depth Anything V2**'s checkpoints, download the Pre-trained Models (e.g., ViT-L) from **[this link](https://github.com/DepthAnything/Depth-Anything-V2)** and place them inside the `checkpoints/` folder.
 
