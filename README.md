@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ### Download Checkpoints
 
-We provide pre-trained **Diffusion-VAS** checkpoints on Hugging Face. To download them, run:
+We provide our Diffusion-VAS checkpoints finetuned on SAIL-VOS on Hugging Face. To download them, run:
 
 ```bash
 mkdir checkpoints
@@ -48,7 +48,7 @@ git clone https://huggingface.co/kaihuac/diffusion-vas-content-completion
 cd ..
 ```
 
-For **Depth Anything V2**'s checkpoints, download the **Pre-trained Models** (e.g., ViT-L) from **[this link](https://chatgpt.com/c/67cb020f-f858-8005-a546-547ff558f87f#TODO:Provide-Link)** and place them inside the `checkpoints/` folder.
+For **Depth Anything V2**'s checkpoints, download the Pre-trained Models (e.g., ViT-L) from **[this link](https://chatgpt.com/c/67cb020f-f858-8005-a546-547ff558f87f#TODO:Provide-Link)** and place them inside the `checkpoints/` folder.
 
 ### Inference
 
@@ -58,7 +58,7 @@ To run inference, simply execute:
 python demo.py
 ```
 
-This will infer the **birdcage** example from `demo_data/`.
+This will infer the birdcage example from `demo_data/`.
 
 To try different examples, modify the `seq_name` argument:
 
@@ -66,7 +66,7 @@ To try different examples, modify the `seq_name` argument:
 python demo.py --seq_name <your_sequence_name>
 ```
 
-You can also change the **checkpoint path, data output paths**, and other parameters as needed.
+You can also change the checkpoint path, data output paths, and other parameters as needed.
 
 ## Citation
 
