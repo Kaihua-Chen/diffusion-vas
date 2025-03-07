@@ -1,12 +1,15 @@
 # Using Diffusion Priors for Video Amodal Segmentation
+**CVPR 2025**
+Official implementation of <strong>Using Diffusion Priors for Video Amodal Segmentation</strong>
+[*Kaihua Chen*](https://www.linkedin.com/in/kaihuac/)
+[*Deva Ramanan*](https://www.cs.cmu.edu/~deva/)
+[*Tarasha Khurana*](https://www.cs.cmu.edu/~tkhurana/)
 
-Official implementation of <strong>Using Diffusion Priors for Video Amodal Segmentation</strong>, **CVPR 2025**
+Carnegie Mellon University
 
 [**Paper**](https://diffusion-vas.github.io) | [**Project Page**](https://diffusion-vas.github.io) | [**Video**](https://www.youtube.com/watch?v=nXO7laNyARA)
 
-Using Diffusion Priors for Video Amodal Segmentation <br>
-Kaihua Chen<sup>1</sup>, Deva Ramanan<sup>1</sup>, Tarasha Khurana<sup>1</sup> <br>
-<sup>1</sup>Carnegie Mellon University
+
 
 
 ## Updates
