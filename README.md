@@ -47,7 +47,7 @@ git clone https://huggingface.co/kaihuac/diffusion-vas-content-completion
 cd ..
 ```
 
-For **Depth Anything V2**'s checkpoints, download the Pre-trained Models (e.g., ViT-L) from **[this link](https://chatgpt.com/c/67cb020f-f858-8005-a546-547ff558f87f#TODO:Provide-Link)** and place them inside the `checkpoints/` folder.
+For **Depth Anything V2**'s checkpoints, download the Pre-trained Models (e.g., ViT-L) from **[this link](https://github.com/DepthAnything/Depth-Anything-V2)** and place them inside the `checkpoints/` folder.
 
 ### Inference
 
@@ -66,6 +66,10 @@ python demo.py --seq_name <your_sequence_name>
 ```
 
 You can also change the checkpoint path, data output paths, and other parameters as needed.
+
+### Using custom data
+
+Start with a video, extract frames preferably at 8 FPS, and use the SAM2 [web demo](https://sam2.metademolab.com/) or its [codebase](https://github.com/facebookresearch/sam2) to segment the target object. Ensure that the output follows the same directory structure as demo_data/ before running inference.
 
 ## Citation
 
