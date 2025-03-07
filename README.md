@@ -73,14 +73,11 @@ You can also change the checkpoint path, data output paths, and other parameters
 If you find this work helpful, please consider citing our paper:
 
 ```bibtex
-@article{chen2024diffvas,
+@inproceedings{chen2025diffvas,
       title={Using Diffusion Priors for Video Amodal Segmentation},
       author={Kaihua Chen and Deva Ramanan and Tarasha Khurana},
-      year={2024},
-      archivePrefix={arXiv},
-      eprint={2412.04623},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.04623}
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year={2025}
 }
 ```
 
