@@ -362,14 +362,14 @@ if __name__ == "__main__":
         "--depth_encoder",
         type=str,
         default="vitl",  # or 'vits', vitl, 'vitg'
-        help="Path to diffusion-vas content completion checkpoint.",
+        help="Depth encoder type.",
     )
 
     parser.add_argument(
         "--model_path_depth",
         type=str,
         default="checkpoints/",
-        help="Path to diffusion-vas content completion checkpoint.",
+        help="Path to depth anything v2's checkpoint's parent folder.",
     )
 
 
