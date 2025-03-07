@@ -8,12 +8,11 @@ Official implementation of <strong>Using Diffusion Priors for Video Amodal Segme
 
 ![diffusion-vas](assets/diffusion-vas.gif)
 
-[**Paper**](https://diffusion-vas.github.io) | [**Project Page**](https://diffusion-vas.github.io) | [**Video**](https://www.youtube.com/watch?v=nXO7laNyARA)
+[**Paper**](https://arxiv.org/abs/2412.04623) | [**Project Page**](https://diffusion-vas.github.io)
 
 ## TODO 🤓
 
 - [x] Release the checkpoint and inference code 
-
 - [ ] Release evaluation code for SAIL-VOS and TAO-Amodal
 - [ ]  Release fine-tuning code for Diffusion-VAS
 
