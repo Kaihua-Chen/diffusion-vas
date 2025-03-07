@@ -42,6 +42,7 @@ We provide our Diffusion-VAS checkpoints finetuned on SAIL-VOS on Hugging Face. 
 ```bash
 mkdir checkpoints
 cd checkpoints
+git lfs install
 git clone https://huggingface.co/kaihuac/diffusion-vas-amodal-segmentation
 git clone https://huggingface.co/kaihuac/diffusion-vas-content-completion
 cd ..
