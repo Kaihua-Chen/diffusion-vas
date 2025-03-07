@@ -71,7 +71,7 @@ You can also change the checkpoint path, data output paths, and other parameters
 
 ### Using custom data
 
-Start with a video, use the **SAM2**'s [web demo](https://sam2.metademolab.com/) or its [codebase](https://github.com/facebookresearch/sam2) to segment the target object, and extract frames preferably at 8 FPS. Ensure that the output follows the same directory structure as demo_data/ before running inference.
+Start with a video, use the **SAM2**'s [web demo](https://sam2.metademolab.com/) or its [codebase](https://github.com/facebookresearch/sam2) to segment the target object, and extract frames preferably at 8 FPS. Ensure that the output follows the same directory structure as examples from `demo_data/` before running inference.
 
 ## Citation
 
