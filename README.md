@@ -49,7 +49,7 @@ cd ..
 ```
 *Note: Ignore any Windows-related warnings when downloading.*
 
-For **Depth Anything V2**'s checkpoints, download the Pre-trained Models (e.g., ViT-L) from **[this link](https://github.com/DepthAnything/Depth-Anything-V2)** and place them inside the `checkpoints/` folder.
+For **Depth Anything V2**'s checkpoints, download the Pre-trained Models (e.g., Depth-Anything-V2-Large) from **[this link](https://github.com/DepthAnything/Depth-Anything-V2)** and place them inside the `checkpoints/` folder.
 
 ### Inference
 
