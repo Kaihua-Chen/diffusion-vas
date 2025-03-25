@@ -77,10 +77,9 @@ Start with a video, use the **SAM2**'s [web demo](https://sam2.metademolab.com/)
 
 We currently support evaluation on **SAIL-VOS-2D** and **TAO-Amodal**.
 
-### Download Datasets
+### 1. Download Datasets
 
-- For **SAIL-VOS-2D**, follow the official instructions: https://sailvos.web.illinois.edu/_site/index.html  
-- For **TAO-Amodal**, follow the instructions: https://huggingface.co/datasets/chengyenhsieh/TAO-Amodal  
+Download **[SAIL-VOS-2D](https://sailvos.web.illinois.edu/_site/index.html)** and **[TAO-Amodal](https://huggingface.co/datasets/chengyenhsieh/TAO-Amodal)** by following their official instructions.
 
 Additionally, download our curated annotations and precomputed evaluation results:
 
@@ -94,7 +93,7 @@ This includes:
 - `tao_amodal_track_ids_abs2rel_val.json`
 - Precomputed `eval_outputs/` folder
 
-### Generate Evaluation Results
+### 2. Generate Evaluation Results
 
 To evaluate the model, first generate result files using the scripts below. Alternatively, you can skip this step and directly use our precomputed results in `eval_outputs/`.
 
@@ -118,7 +117,7 @@ python eval_diffusion_vas_tao_amodal.py \
     --eval_output_path /path/to/eval_outputs/
 ```
 
-### Compute Metrics
+### 3. Compute Metrics
 
 Once the result files are ready, run the metric scripts:
 
@@ -137,6 +136,8 @@ python metric_diffusion_vas_tao_amodal.py \
     --eval_annot_path /path/to/diffusion_vas_tao_amodal_val.json \
     --track_ids_path /path/to/tao_amodal_track_ids_abs2rel_val.json \
     --pred_annot_path /path/to/eval_outputs/diffusion_vas_tao_amodal_eval_results.json
+```
+
 
 ## Citation
 
