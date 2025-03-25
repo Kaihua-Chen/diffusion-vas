@@ -13,7 +13,7 @@ Official implementation of <strong>Using Diffusion Priors for Video Amodal Segme
 ## TODO 🤓
 
 - [x] Release the checkpoint and inference code 
-- [ ] Release evaluation code for SAIL-VOS and TAO-Amodal
+- [x] Release evaluation code for SAIL-VOS and TAO-Amodal
 - [ ]  Release fine-tuning code for Diffusion-VAS
 
 ## Getting Started
@@ -72,6 +72,71 @@ You can also change the checkpoint path, data output paths, and other parameters
 ### Using custom data
 
 Start with a video, use the **SAM2**'s [web demo](https://sam2.metademolab.com/) or its [codebase](https://github.com/facebookresearch/sam2) to segment the target object, and extract frames preferably at 8 FPS. Ensure that the output follows the same directory structure as examples from `demo_data/` before running inference.
+
+## Evaluation
+
+We currently support evaluation on **SAIL-VOS-2D** and **TAO-Amodal**.
+
+### Download Datasets
+
+- For **SAIL-VOS-2D**, follow the official instructions: https://sailvos.web.illinois.edu/_site/index.html  
+- For **TAO-Amodal**, follow the instructions: https://huggingface.co/datasets/chengyenhsieh/TAO-Amodal  
+
+Additionally, download our curated annotations and precomputed evaluation results:
+
+```bash
+git clone https://huggingface.co/datasets/kaihuac/diffusion_vas_datasets
+```
+
+This includes:
+- `diffusion_vas_sailvos_val.json`
+- `diffusion_vas_tao_amodal_val.json`
+- `tao_amodal_track_ids_abs2rel_val.json`
+- Precomputed `eval_outputs/` folder
+
+### Generate Evaluation Results
+
+To evaluate the model, first generate result files using the scripts below. Alternatively, you can skip this step and directly use our precomputed results in `eval_outputs/`.
+
+*Note: Please replace the paths in the commands with your own dataset and annotation paths.*
+
+**SAIL-VOS-2D**
+```bash
+cd eval
+python eval_diffusion_vas_sailvos.py \
+    --eval_data_path /path/to/SAILVOS_2D/ \
+    --eval_annot_path /path/to/diffusion_vas_sailvos_val.json \
+    --eval_output_path /path/to/eval_outputs/
+```
+
+**TAO-Amodal**
+```bash
+python eval_diffusion_vas_tao_amodal.py \
+    --eval_data_path /path/to/TAO/frames/ \
+    --eval_annot_path /path/to/diffusion_vas_tao_amodal_val.json \
+    --track_ids_path /path/to/tao_amodal_track_ids_abs2rel_val.json \
+    --eval_output_path /path/to/eval_outputs/
+```
+
+### Compute Metrics
+
+Once the result files are ready, run the metric scripts:
+
+**SAIL-VOS-2D**
+```bash
+python metric_diffusion_vas_sailvos.py \
+    --eval_data_path /path/to/SAILVOS_2D/ \
+    --eval_annot_path /path/to/diffusion_vas_sailvos_val.json \
+    --pred_annot_path /path/to/eval_outputs/diffusion_vas_sailvos_eval_results.json
+```
+
+**TAO-Amodal**
+```bash
+python metric_diffusion_vas_tao_amodal.py \
+    --eval_data_path /path/to/TAO/frames/ \
+    --eval_annot_path /path/to/diffusion_vas_tao_amodal_val.json \
+    --track_ids_path /path/to/tao_amodal_track_ids_abs2rel_val.json \
+    --pred_annot_path /path/to/eval_outputs/diffusion_vas_tao_amodal_eval_results.json
 
 ## Citation
 
