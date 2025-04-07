@@ -10,3 +10,5 @@ accelerate
 pycocotools
 imageio
 scipy
+einops
+omegaconf
