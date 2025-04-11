@@ -49,7 +49,7 @@ cd ..
 ```
 *Note: Ignore any Windows-related warnings when downloading.*
 
-For **Depth Anything V2**'s checkpoints, download the Pre-trained Models (e.g., Depth-Anything-V2-Large) from **[this link](https://github.com/DepthAnything/Depth-Anything-V2)** and place them inside the `checkpoints/` folder.
+For **Depth Anything V2**'s checkpoints, download the Pre-trained Models (e.g., Depth-Anything-V2-Large) from [this link](https://github.com/DepthAnything/Depth-Anything-V2) and place them inside the `checkpoints/` folder.
 
 ### Inference
 
@@ -79,9 +79,9 @@ We currently support evaluation on **SAIL-VOS-2D** and **TAO-Amodal**.
 
 ### 1. Download Datasets
 
-Download **[SAIL-VOS-2D](https://sailvos.web.illinois.edu/_site/index.html)** and **[TAO-Amodal](https://huggingface.co/datasets/chengyenhsieh/TAO-Amodal)** by following their official instructions.
+Download [SAIL-VOS-2D](https://sailvos.web.illinois.edu/_site/index.html) and [TAO-Amodal](https://huggingface.co/datasets/chengyenhsieh/TAO-Amodal) by following their official instructions.
 
-Additionally, download **[our](https://huggingface.co/datasets/kaihuac/diffusion_vas_datasets/tree/main)** curated annotations and precomputed evaluation results:
+Additionally, download [our](https://huggingface.co/datasets/kaihuac/diffusion_vas_datasets/tree/main) curated annotations and precomputed evaluation results:
 
 ```bash
 git clone https://huggingface.co/datasets/kaihuac/diffusion_vas_datasets
@@ -141,11 +141,12 @@ python metric_diffusion_vas_tao_amodal.py \
 ```
 
 ## Finetuning on SAIL-VOS
-We currently support fine-tuning for both the amodal segmentation and content completion stages on SAIL-VOS, based on **[Stable Video Diffusion](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt)** and adapted from **[SVD_Xtend](https://github.com/pixeli99/SVD_Xtend)**.
+We currently support fine-tuning for both the amodal segmentation and content completion stages on SAIL-VOS, based on [Stable Video Diffusion](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt) and adapted from [SVD Xtend](https://github.com/pixeli99/SVD_Xtend).
 
 *Note: Please replace the paths in the commands with your own dataset and annotation paths. The annotations can be downloaded as shown in the Evaluation section.*
 
 **Amodal segmentation fine-tuning**
+
 We provide end-to-end fine-tuning conditioned on modal masks and depth maps. The training script is:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch train/train_diffusion_vas_amodal_segm.py \
@@ -157,9 +158,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch train/train_diffusion_vas
 
 *Note*:
 * Our default implementation runs the depth estimator during each training step, which requires more than 24GB memory per GPU and significantly increases training time (~120 hours on 8× A6000s).
-* To reduce memory usage and training time, we highly recommend precomputing and saving pseudo-depth maps ahead of time. This allows training on RTX 3090s and reduces training time (~30 hours) considerably.
+* To reduce memory usage and training time, we highly recommend precomputing and saving pseudo-depth maps before training. This allows training on RTX 3090s and reduces training time (~30 hours) considerably.
 
 **Content completion fine-tuning**
+
 We provide end-to-end fine-tuning based on modal RGB images and predicted amodal masks:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch train/train_diffusion_vas_content_comp.py \
@@ -173,7 +175,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch train/train_diffusion_vas
 This stage does not require depth estimation, and training typically completes in ~30 hours on 8× RTX 3090s.
 
 ## Acknowledgement
-This work builds on top of several excellent projects, including [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2), [SAM2]((https://github.com/facebookresearch/sam2)), [Stable Video Diffusion](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt), and [SVD_Xtend](https://github.com/pixeli99/SVD_Xtend). Our training and evaluation are based on [SAIL-VOS](https://sailvos.web.illinois.edu/_site/index.html) and [TAO-Amodal](https://huggingface.co/datasets/chengyenhsieh/TAO-Amodal). We sincerely thank the authors for their contributions.
+
+This work builds on top of several excellent projects, including [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2), [SAM2]((https://github.com/facebookresearch/sam2)), [Stable Video Diffusion](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt), and [SVD Xtend](https://github.com/pixeli99/SVD_Xtend). Our training and evaluation are based on [SAIL-VOS](https://sailvos.web.illinois.edu/_site/index.html) and [TAO-Amodal](https://huggingface.co/datasets/chengyenhsieh/TAO-Amodal). We sincerely thank the authors for their contributions.
 
 
 ## Citation
