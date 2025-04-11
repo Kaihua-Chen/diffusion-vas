@@ -194,7 +194,7 @@ If you find this work helpful, please consider citing our papers:
 ```bibtex
 @article{hsieh2023taoamodal,
   title={TAO-Amodal: A Benchmark for Tracking Any Object Amodally},
-  author={Hsieh, Cheng-Yen and Kaihua, Chen and Dave, Achal and Khurana, Tarasha and Ramanan, Deva},
+  author={Cheng-Yen Hsieh and Kaihua Chen and Achal Dave and Tarasha Khurana and Deva Ramanan},
   journal={arXiv preprint arXiv:2312.12433},
   year={2023}
 }
