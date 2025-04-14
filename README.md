@@ -162,7 +162,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch train/train_diffusion_vas
 
 **Content completion fine-tuning**
 
-We provide end-to-end fine-tuning based on modal RGB images and predicted amodal masks:
+We provide end-to-end fine-tuning conditioned on modal RGB images and predicted amodal masks:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch train/train_diffusion_vas_content_comp.py \
     --data_path /path/to/SAILVOS_2D/ \
