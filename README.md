@@ -97,9 +97,9 @@ This includes:
 
 ### 2. Generate Evaluation Results
 
-To evaluate the model, first generate result files using the scripts below. Alternatively, you can skip this step and directly use our precomputed results in `eval_outputs/`.
+To evaluate the model, first generate result files using the scripts below. **Alternatively**, you can skip this step and directly use our precomputed results in `eval_outputs/`.
 
-*Note: Please replace the paths in the commands with your own dataset and annotation paths.*
+*Note: Please replace the paths in the commands with your own dataset and json annotation paths.*
 
 **SAIL-VOS-2D**
 ```bash
@@ -143,7 +143,7 @@ python metric_diffusion_vas_tao_amodal.py \
 ## Finetuning on SAIL-VOS
 We currently support fine-tuning for both the amodal segmentation and content completion stages on SAIL-VOS, based on [Stable Video Diffusion](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt) and adapted from [SVD Xtend](https://github.com/pixeli99/SVD_Xtend).
 
-*Note: Please replace the paths in the commands with your own dataset and annotation paths. The annotations can be downloaded as shown in the Evaluation section.*
+*Note: Please replace the paths in the commands with your own dataset and annotation paths. The json annotations can be downloaded as shown in the Evaluation section.*
 
 **Amodal segmentation fine-tuning**
 
