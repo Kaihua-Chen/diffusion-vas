@@ -184,11 +184,13 @@ This work builds on top of several excellent projects, including [Depth Anything
 If you find this work helpful, please consider citing our papers:
 
 ```bibtex
-@inproceedings{chen2025diffvas,
-      title={Using Diffusion Priors for Video Amodal Segmentation},
-      author={Kaihua Chen and Deva Ramanan and Tarasha Khurana},
-      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-      year={2025}
+@InProceedings{chen2025diffvas,
+    author    = {Chen, Kaihua and Ramanan, Deva and Khurana, Tarasha},
+    title     = {Using Diffusion Priors for Video Amodal Segmentation},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {22890-22900}
 }
 ```
 ```bibtex
