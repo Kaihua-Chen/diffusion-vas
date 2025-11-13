@@ -166,8 +166,8 @@ We provide end-to-end fine-tuning conditioned on modal RGB images and predicted 
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch train/train_diffusion_vas_content_comp.py \
     --data_path /path/to/SAILVOS_2D/ \
-    --train_annot_path /path/to/diffusion_vas_sailvos_train.json \
-    --eval_annot_path /path/to/diffusion_vas_sailvos_val.json \
+    --train_annot_path /path/to/sailvos_complete_objs_as_occluders.json \
+    --eval_annot_path /path/to/sailvos_complete_objs_as_occluders.json \
     --occluder_data_path /path/to/sailvos_complete_objs_as_occluders.json \
     --output_dir /path/to/train_diffusion_vas_content_comp_outputs
 ```
